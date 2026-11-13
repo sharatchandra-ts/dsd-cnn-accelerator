@@ -1,0 +1,18 @@
+# Vivado Specific Generated Files
+*.str
+*.jou
+*.log
+*.mif
+*.xpr
+*.html
+*.xml
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/utils_1/
+*.gen/
+.Xil/
+hd_visual/
+vivado*.tar.*
