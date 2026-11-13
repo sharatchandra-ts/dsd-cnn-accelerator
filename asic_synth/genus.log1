@@ -1,0 +1,60 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[14:04:26.445322] Configured Lic search path (21.01-s002): 5280@14.139.1.126:/opt/lic_mentor_chipcenter_03042018.lic
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files run_synth.tcl 
+Date:    Fri Nov 13 14:04:26 2026
+Host:    pesc-17.pes.edu (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*1physical cpu*Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz 6144KB) (16164888KB)
+PID:     10253
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+Checking out license: Genus_Synthesis
+License server error: ERROR (LMF-03096): License call failed for feature Genus_Synthesis, version 21.100 and quantity 1. The license server search path is defined as 5280@14.139.1.126:/opt/lic_mentor_chipcenter_03042018.lic. The FLEXnet error message is as follows,
+    FLEXnet ERROR(-96, 0, 0): License server machine is down or not responding.
+
+Run 'lic_error LMF-03096' for more information.
+ (42 seconds elapsed).
+License 'Genus_Synthesis' (main version: 21.1, alternate version: 21.1) checkout failed.
+
+[14:05:30.373218] Periodic Lic check successful
+[14:05:30.373226] Feature usage summary:
+[14:05:30.373226] Virtuoso_Digital_Implem
+Checking out license: Virtuoso_Digital_Implem (22 seconds elapsed).
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (8 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source run_synth.tcl
+#@ Begin verbose source ./run_synth.tcl
+@file(run_synth.tcl) 6: set LIB_PATH "/path/to/saed90nm/lib/stdcell_rvt/db" 
+@file(run_synth.tcl) 9: set_db init_lib_search_path $LIB_PATH
+  Setting attribute of root '/': 'init_lib_search_path' = /path/to/saed90nm/lib/stdcell_rvt/db
+@file(run_synth.tcl) 10: set_db library {saed90nm_rvt_typ.lib} 
+Error   : File error. [FILE-100] [set_db]
+        : Cannot open file 'saed90nm_rvt_typ.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [set_db]
+        : File 'saed90nm_rvt_typ.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_db]
+        : The value 'saed90nm_rvt_typ.lib' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source ./run_synth.tcl
+1
+Encountered problems processing file: run_synth.tcl
+WARNING: This version of the tool is 1603 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 217s, ST: 13s, FG: 13s, CPU: 5.7%}, MEM {curr: 0.9G, peak: 0.9G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.4, cpu: 4, total: 15.4G, free: 8.8G}
+Abnormal exit.

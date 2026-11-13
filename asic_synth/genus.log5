@@ -1,0 +1,27 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[14:14:04.445298] Configured Lic search path (21.01-s002): 5280@14.139.1.126:/opt/lic_mentor_chipcenter_03042018.lic
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: 
+Date:    Fri Nov 13 14:14:04 2026
+Host:    pesc-17.pes.edu (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*1physical cpu*Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz 6144KB) (16164888KB)
+PID:     12227
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+Checking out license: Genus_Synthesis
+License server error: ERROR (LMF-03015): License call failed for feature Genus_Synthesis, version 21.100 and quantity 1. The license server search path is defined as 5280@14.139.1.126:/opt/lic_mentor_chipcenter_03042018.lic. The FLEXnet error message is as follows,
+    FLEXnet ERROR(-15, 0, 0): Cannot connect to license server system.
+
+Run 'lic_error LMF-03015' for more information.
+ (32 seconds elapsed).
+License 'Genus_Synthesis' (main version: 21.1, alternate version: 21.1) checkout failed.
+Checking out license: Virtuoso_Digital_Implem (40 seconds elapsed).
+License 'Virtuoso_Digital_Implem' (main version: 21.1, alternate version: 21.1) checkout failed.
+Checking out license: Virtuoso_Digital_Implem_XL (12 seconds elapsed).
+License 'Virtuoso_Digital_Implem_XL' (main version: 21.1, alternate version: 21.1) checkout failed.
+Cannot obtain 'Genus_Synthesis' license.
+Abnormal exit.

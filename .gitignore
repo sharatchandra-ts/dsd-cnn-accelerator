@@ -16,3 +16,4 @@
 .Xil/
 hd_visual/
 vivado*.tar.*
+.DS_Store
